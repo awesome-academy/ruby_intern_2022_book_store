@@ -1,4 +1,4 @@
-module Admin::OrdersHelper
+module OrdersHelper
   def total_on_book quantity, price
     quantity * price
   end
@@ -20,25 +20,6 @@ module Admin::OrdersHelper
                       order_detail.book_detail.book_price),
         discount_percent(order_detail.order.discount)
       )
-    end
-  end
-
-<<<<<<< HEAD
-=======
-  def button_class status
-    if status == :accepted
-      "btn-success"
-    elsif status == :rejected
-      "btn-danger"
-    end
-  end
-
->>>>>>> a40adad (Show order's history)
-  def button_font status
-    if status == :accepted
-      "fa-circle-check"
-    elsif status == :rejected
-      "fa-trash-can"
     end
   end
 end

@@ -43,7 +43,7 @@ vi:
   order_id: "Order ID"
   receiver_name: "Tên người nhận"
   address: "Địa chỉ"
-  phone: Số điện thoại"
+  phone: "Số điện thoại"
   discount: "Giảm giá"
   total_order_detail: "Thành tiền"
   total_order: "Tổng tiền"
@@ -125,6 +125,7 @@ vi:
       products: "Sản phẩm"
       login: "Đăng nhập"
       logout: "Đăng xuất"
+      orders: "Đơn hàng"
     footer:
       bookstore: "Book Store"
       address: "Địa chỉ"
@@ -172,3 +173,7 @@ vi:
       quantity: "Số lượng"
       subtotal: "Đơn giá"
       order: "Đặt hàng"
+  orders:
+    index:
+      title: "Quản lý đơn hàng"
+      order_management: "Quản lý đơn hàng"

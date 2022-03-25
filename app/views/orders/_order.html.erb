@@ -1,0 +1,25 @@
+<tr>
+  <td><%= render partial: "customer_info",
+                 locals: {customer: order.address} %>
+  </td>
+  <td>
+    <%= render partial: "description", collection: order.order_details,
+                                       as: :od %>
+    <ul>
+      <li>
+        <%= t "discount" %>:
+        <%= discount_percent(order.discount) %> %
+      </li>
+      <li>
+        <%= t "total_order" %>:
+        <%= number_to_currency(Order.convert_vnd(
+                                total(order.order_details),
+                                params[:locale]))%>
+      </li>
+    </ul>
+  </td>
+  <td><%= l(order.created_at, format: :short) %></td>
+  <td>
+    <%= order.status %>
+  </td>
+</tr>

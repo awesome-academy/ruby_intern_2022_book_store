@@ -1,6 +1,6 @@
 <%= form_for [:admin, order] do |f| %>
   <%= f.hidden_field :status, value: status %>
-  <%= f.button :submit, class: "btn btn-#{status}",
+  <%= f.button :submit, class: "btn #{button_class(status)}",
                         data: { confirm: t("are_you_sure") } do %>
     <i class="fa-solid <%= button_font(status) %>"></i>
   <% end %>

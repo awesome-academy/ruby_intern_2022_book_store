@@ -124,6 +124,7 @@ en:
       products: "Products"
       login: "Login"
       logout: "Log out"
+      orders: "Order"
     footer:
       bookstore: "Book Store"
       address: "Address"
@@ -171,3 +172,7 @@ en:
       quantity: "Quantity"
       subtotal: "Subtotal"
       order: "Order"
+  orders:
+    index:
+      title: "Order Management"
+      order_management: "Order Management"
