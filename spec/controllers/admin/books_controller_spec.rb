@@ -107,6 +107,7 @@ RSpec.describe Admin::BooksController, type: :controller do
     context "when delete fail" do
       let(:book_5){FactoryBot.build_stubbed(:book)}
       before do
+        #sdfsdf
         allow(book_5).to receive(:destroy).and_return(false)
         allow(Book).to receive(:find_by).and_return(book_5)
       end
