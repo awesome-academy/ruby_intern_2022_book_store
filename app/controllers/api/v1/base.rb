@@ -5,6 +5,7 @@ module Api
     class Base < Grape::API
       mount V1::Users
       mount V1::Auth
+      mount V1::Books
       add_swagger_documentation(
         api_version: "v1",
         hide_documentation_path: true,

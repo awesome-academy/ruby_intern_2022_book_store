@@ -14,6 +14,7 @@ en:
   search: "Search by name"
   signup: "Sign Up"
   login: "Log in"
+  sign_in_with: "Sign In With"
   invalid: "Invalid email password combination"
   not_exist: "Not exist"
   success: "Success!"

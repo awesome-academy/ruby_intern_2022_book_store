@@ -24,7 +24,7 @@ module Api
             token = request.headers["Jwt-Token"]
             if AuthToken.find_by token: token
               user_id = Authentication.decode(token)["user_id"] if token
-              @current_user = User.find_by id: user_id
+              @current_user ||= User.find_by id: user_id
             end
             return if @current_user
 
