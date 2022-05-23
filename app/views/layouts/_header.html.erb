@@ -13,13 +13,11 @@
             <span><%= link_to t("en"), locale: :en %></span>
             <% if user_signed_in? %>
               <a href="" class="account-link">
-              <i class="fa fa-user" aria-hidden="true"></i>
               <span>
                  <%= link_to t(".logout"), logout_path, method: :delete %>
               </span>
             </a>
             <a href="" class="cart-link">
-              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
               <span>
                 <%= link_to t(".cart"), carts_path %>
               </span>

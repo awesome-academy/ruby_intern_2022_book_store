@@ -15,6 +15,7 @@ class OrdersController < ApplicationController
   def show
     respond_to do |format|
       format.js
+      format.html{redirect_to orders_path}
     end
   end
 

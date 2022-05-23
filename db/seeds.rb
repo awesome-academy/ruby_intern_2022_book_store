@@ -70,7 +70,7 @@ User.create!(name: "abc",
   start_at = Faker::Time.between(from: 2.days.ago, to: Time.now)
   end_at = Faker::Time.forward(days: 100, period: :morning)
   code = "code-#{n+1}"
-  percent = Faker::Number.between(from: 1, to: 100)
+  percent = Faker::Number.between(from: 1, to: 10)
   quantity = Faker::Number.between(from: 100, to: 500)
   Discount.create!(start_at: start_at,
                    end_at: end_at,

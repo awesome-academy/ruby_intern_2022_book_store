@@ -15,6 +15,7 @@ vi:
   signup: "Đăng ký"
   login: "Đăng nhập"
   invalid: "Email/mật khẩu không hợp lệ"
+  sign_in_with: "Đăng ký với"
   not_exist: "Không tồn tại"
   success: "Thành công"
   failure: "Thất bại"

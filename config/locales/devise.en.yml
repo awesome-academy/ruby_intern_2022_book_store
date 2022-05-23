@@ -47,6 +47,8 @@ en:
       updated_not_active: "Your password has been changed successfully."
       new:
         send_me_reset_password_instructions: "Send me reset password instructions"
+      edit:
+        change_my_password: "Change my password"
     shared:
       links:
         not_receive_confirm_instruction: "Not receive confirm instruction?"
